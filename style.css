@@ -1,3 +1,15 @@
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-lighter: hsl(45deg, 100%, 50%);
+  --color-secondary-darker: hsl(45deg, 100%, 40%);
+  --color-gray-1: hsl(0deg, 0%, 0%);
+  --color-gray-2: hsl(0deg, 0%, 10%);
+  --color-gray-3: hsl(0deg, 0%, 30%);
+  --color-gray-4: hsl(0deg, 0%, 40%);
+  --color-gray-5: hsl(0deg, 0%, 60%);
+  --color-gray-6: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +19,65 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  /* Also works in rtl */
+  /* direction: rtl; */
 }
 
-/* Add styles here! */
+h1, h2, h3, h4, h5, h6 {
+  margin-block-start: 0;
+}
+
+p {
+  margin-block-start: 0;
+}
+
+.max-width-wrapper {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-top: 96px;
+  padding-bottom: 32px;
+  border-bottom: solid 5px var(--color-gray-4);
+}
+
+.intro-chunk {
+  max-width: 350px;
+  padding: 0 16px;
+  font-size: 1.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+main {
+  background: var(--color-gray-5);
+  padding-top: 64px;
+  /* No flexbox :( */
+  padding-bottom: 64px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  padding-top: 8px;
+  border-bottom: solid 5px var(--color-gray-4);
+}
+
+.indented-heading {
+  display: inline-block;
+  width: fit-content;
+  padding: 16px 32px;
+  margin-inline-start: -32px;
+  background: var(--color-secondary-lighter);
+  border-bottom: solid 5px var(--color-secondary-darker);
+}
+
+strong {
+  color: var(--color-primary);
+}
