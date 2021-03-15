@@ -24,6 +24,10 @@ body {
   /* direction: rtl; */
 }
 
+html {
+  font-size: 18px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-block-start: 0;
 }
@@ -33,7 +37,7 @@ p {
 }
 
 .max-width-wrapper {
-  max-width: 560px;
+  max-width: 625px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,14 +49,21 @@ header {
 }
 
 .intro-chunk {
-  max-width: 350px;
+  max-width: 400px;
   padding: 0 16px;
+}
+
+.intro-chunk .title {
+  font-size: 1.75rem;
+  margin-bottom: 48px;
+}
+
+.intro-chunk p {
   font-size: 1.25rem;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 32px;
+.intro-chunk strong {
+  color: var(--color-primary);
 }
 
 main {
@@ -64,7 +75,7 @@ main {
 
 .card {
   background: white;
-  padding: 16px;
+  padding: 24px;
   padding-top: 8px;
   border-bottom: solid 5px var(--color-gray-4);
 }
@@ -76,8 +87,13 @@ main {
   margin-inline-start: -32px;
   background: var(--color-secondary-lighter);
   border-bottom: solid 5px var(--color-secondary-darker);
+  font-size: 1.25rem;
 }
 
-strong {
-  color: var(--color-primary);
+.card p {
+  line-height: 1.4
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
